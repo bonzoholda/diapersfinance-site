@@ -1,118 +1,71 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-zinc-950 text-white">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diapers Finance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;500&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: 'Exo', sans-serif; }
-    @keyframes bounceLogo {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d0d0d;
+      color: #d1d5db;
     }
-    .logo-bounce {
-      animation: bounceLogo 3s ease-in-out infinite;
+    .neon-text {
+      color: #c084fc;
+      text-shadow: 0 0 5px #c084fc, 0 0 10px #c084fc;
+    }
+    .gold-text {
+      color: #ffd700;
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
-<style>
-  .aspect-w-16 { position: relative; padding-bottom: 56.25%; height: 0; }
-  .aspect-w-16 iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
-</style>
-
-  
 </head>
-<body class="min-h-screen flex flex-col bg-zinc-950 px-4 text-white">
-
-  <header class="w-full max-w-5xl mx-auto py-8 text-center">
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-light text-purple-400 drop-shadow-lg">Diapers Finance</h1>
-    <p class="mt-2 text-zinc-400 font-light">Decentralized, sustainable, stinky smell!</p>
+<body class="p-4">
+  <header class="text-center mb-8">
+    <h1 class="text-4xl md:text-6xl font-thin neon-text fade-in">Diapers Finance</h1>
+    <p class="text-xl mt-2 neon-text">Decentralized, sustainable, stinky smell!</p>
   </header>
 
-  <!-- Logo -->
-  <div class="w-full flex justify-center mb-4">
-    <img src="assets/diapersfin.png" alt="Diapers Logo" class="w-32 sm:w-40 logo-bounce"/>
-  </div>
-
-<!-- Dexscreener Chart Embed -->
-<div class="mb-6">
-  <iframe
-    src="https://dexscreener.com/polygon/0xf5643d91ce7b1fb1e01a7a15e7b9977e9a0d4e77?embed=1&theme=dark"
-    style="width: 100%; height: 400px; border: none; border-radius: 10px;"
-    allowfullscreen
-  ></iframe>
-</div>
-
-  
-  <!-- Tabs -->
-  <div class="max-w-4xl mx-auto mb-6 border-b border-purple-700 flex space-x-6 text-sm sm:text-base">
-    <button onclick="showTab('main')" class="tab-button active-tab text-purple-400 border-b-2 border-purple-400 pb-2">Main</button>
-    <button onclick="showTab('tokenomics')" class="tab-button text-zinc-400 hover:text-purple-300 pb-2">Tokenomics</button>
-    <button onclick="showTab('shitmap')" class="tab-button text-zinc-400 hover:text-purple-300 pb-2">Shitmap</button>
-  </div>
-
-  <!-- Main Tab -->
-  <div id="main" class="tab-content block">
-    <main class="max-w-3xl mx-auto space-y-6 text-zinc-300 font-light px-4 text-center sm:text-left">
-      <ul class="space-y-2 list-disc list-inside">
-        <li>Dual tokens system + 3 different pools</li>
-        <li><strong class="text-purple-400">PosH</strong> - Proof of shit Holding rewarding mechanism</li>
-        <li>Extremely low supply - 100 DYPR and 100 WYPE fixed max supply</li>
-        <li>Inflation free zone</li>
-        <li>Pump n Dump war, dumpers get taxed 40% where 37% goes back to rewarding pool</li>
-        <li>Holders are winning, claim rewards every 24hrs</li>
-        <li>Interactive and sustainable ecosystem</li>
-      </ul>
-      <div class="text-center mt-6">
-        <a href="https://diapers.finance/app" target="_blank" class="bg-purple-500 hover:bg-purple-600 text-black font-semibold py-3 px-6 rounded-xl text-lg shadow-lg transition">Enter the Dapp</a>
+  <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-10 fade-in">
+    <div class="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
+      <img src="logo.png" alt="Diapers Finance Logo" class="max-w-xs md:max-w-sm animate-pulse">
+    </div>
+    <div class="w-full md:w-1/2 space-y-4">
+      <div>
+        <h2 class="text-2xl neon-text font-thin">Main</h2>
+        <ul class="list-disc list-inside mt-2">
+          <li>Dual tokens system + 3 different pools</li>
+          <li>PosH - Proof of shit Holding rewarding mechanism</li>
+          <li>Extremely low supply - 100 DYPR and 100 WYPE fixed max supply</li>
+          <li>Inflation free zone</li>
+          <li>Pump n Dump war, dumpers get taxed 40% where 37% goes back to rewarding pool</li>
+          <li>Holders are winning, claim rewards every 24hrs</li>
+          <li>Interactive and sustainable ecosystem</li>
+        </ul>
       </div>
-    </main>
-  </div>
 
-  <!-- Tokenomics Tab -->
-  <div id="tokenomics" class="tab-content hidden">
-    <div class="max-w-3xl mx-auto px-4 py-4 text-zinc-300 font-light leading-relaxed">
-      <h2 class="text-2xl text-purple-400 mb-3 font-light">Tokenomics</h2>
-      <ul class="list-disc list-inside space-y-2">
-        <li>Total Supply: 100 DYPR + 100 WYPE (fixed)</li>
-        <li>No mint function, truly deflationary and capped</li>
-        <li>Rewards from dump taxes go to holders pool</li>
-        <li>Tokens distributed based on pool stakes and holding behavior</li>
-      </ul>
+      <div>
+        <h2 class="text-2xl neon-text font-thin">Tokenomics</h2>
+        <p class="mt-2">Coming soon...</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl neon-text font-thin">Shitmap</h2>
+        <p class="mt-2">Coming soon...</p>
+      </div>
+
+      <div class="text-center mt-6">
+        <a href="https://diapersfinance.netlify.app/" target="_blank" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition">Enter Dapp</a>
+      </div>
     </div>
   </div>
-
-  <!-- Shitmap Tab -->
-  <div id="shitmap" class="tab-content hidden">
-    <div class="max-w-3xl mx-auto px-4 py-4 text-zinc-300 font-light leading-relaxed">
-      <h2 class="text-2xl text-purple-400 mb-3 font-light">Shitmap</h2>
-      <ul class="list-disc list-inside space-y-2">
-        <li>Q1: Deploy smart contracts & launch pools</li>
-        <li>Q2: Release Dapp & activate PosH rewards</li>
-        <li>Q3: Community governance, voting for upgrades</li>
-        <li>Q4: Global stink domination campaign</li>
-      </ul>
-    </div>
-  </div>
-
-  <footer class="text-center text-sm text-zinc-500 py-8 px-4 mt-12">
-    &copy; 2025 Diapers Finance. Flush responsibly.
-  </footer>
-
-  <script>
-    function showTab(tabId) {
-      document.querySelectorAll('.tab-content').forEach(div => div.classList.add('hidden'));
-      document.querySelectorAll('.tab-button').forEach(btn => {
-        btn.classList.remove('text-purple-400', 'border-b-2', 'border-purple-400', 'active-tab');
-        btn.classList.add('text-zinc-400');
-      });
-      document.getElementById(tabId).classList.remove('hidden');
-      event.target.classList.add('text-purple-400', 'border-b-2', 'border-purple-400', 'active-tab');
-      event.target.classList.remove('text-zinc-400');
-    }
-  </script>
-
 </body>
 </html>
