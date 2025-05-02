@@ -61,10 +61,13 @@ body {
   }
 }
 
+.title h1,
+.title h2 {
+  color: gold;
+}
 
   .title h1 {
     font-size: 2rem;
-    color: #a855f7;
   }
 
   .title h2 {
