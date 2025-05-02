@@ -5,7 +5,7 @@ body {
   font-family: 'Exo 2', sans-serif;
   font-weight: 100;
   background-color: white;
-  color: #555555;
+  color: #333333;
   line-height: 1.6;
 }
 
@@ -61,11 +61,12 @@ body {
 /* Title and subtitle */
 .title h1 {
   font-size: 3rem;
+  font-weight: 200;
   color: purple;
 }
 
 .title h2 {
-  font-size: 1rem;
+  font-size: 2rem;
   color: #333333;
 }
 
@@ -164,10 +165,11 @@ body {
 
   .title h1 {
     font-size: 3rem;
+    font-weight: 200;
   }
 
   .title h2 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .btn {
