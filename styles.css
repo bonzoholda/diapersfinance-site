@@ -25,21 +25,22 @@ body {
   text-align: center;
 }
 
+/* Logo container */
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
   position: relative;
   width: 100%;
   max-width: 240px;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo img {
   width: 100%;
   height: auto;
-  max-width: 240px;
   transition: opacity 0.3s ease;
+  display: block;
 }
 
 .logo img.logo-hover {
@@ -57,33 +58,18 @@ body {
   opacity: 1;
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  .logo {
-    max-width: 180px;
-  }
-
-  .logo img {
-    max-width: 180px;
-  }
+/* Title and subtitle */
+.title h1 {
+  font-size: 2rem;
+  color: gold;
 }
 
-
-
-  .title h1 {
-    font-size: 2rem;
-    color: gold;
-  }
-
-  .title h2 {
-    font-size: 1rem;
-    color: zinc;
-  }
-
+.title h2 {
+  font-size: 1rem;
+  color: #d4d4d8;
 }
 
-
-/* --- Tabs Navigation --- */
+/* Tabs Navigation */
 .tab-buttons {
   display: flex;
   gap: 2rem;
@@ -121,7 +107,8 @@ body {
   color: #a855f7;
 }
 
-.tab-button:hover::after {
+.tab-button:hover::after,
+.tab-button.active::after {
   width: 100%;
 }
 
@@ -129,11 +116,7 @@ body {
   color: #a855f7;
 }
 
-.tab-button.active::after {
-  width: 100%;
-}
-
-/* --- Content area --- */
+/* Content area */
 .tab-content {
   display: none;
 }
@@ -147,7 +130,6 @@ body {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 
 /* Dapp button */
 .dapp-button {
@@ -170,20 +152,18 @@ body {
   background-color: #9333ea;
 }
 
-/* Responsive */
+/* Mobile responsive tweaks */
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .logo {
+    max-width: 160px;
   }
 
   .logo img {
-    max-width: 100px;
+    max-width: 100%;
   }
 
   .title h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .title h2 {
