@@ -15,18 +15,27 @@ body {
 
 /* --- Tabs --- */
 .tab-button {
-  color: #6b7280; /* warm muted gray */
+  color: #9ca3af; /* Lighter muted gray */
   font-weight: 300;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tab-button.active,
 .tab-button:hover {
-  color: #a855f7;
+  color: #a855f7; /* Purple on hover and active */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for hover and active state */
 }
 
 .tab-button::after {
-  background-color: #a855f7;
+  background-color: #a855f7; /* Purple underline */
+  transition: background-color 0.3s ease;
 }
+
+.tab-button:hover::after,
+.tab-button.active::after {
+  background-color: #d6aefb; /* Lighter purple underline on hover/active */
+}
+
 
 /* --- Headings --- */
 .title h1 {
