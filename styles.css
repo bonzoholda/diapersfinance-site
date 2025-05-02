@@ -5,7 +5,7 @@ body {
   font-family: 'Exo 2', sans-serif;
   font-weight: 100;
   background-color: white;
-  color: #333333;
+  color: black;
   line-height: 1.6;
 }
 
@@ -140,11 +140,11 @@ body {
 
 .btn {
   padding: 0.85rem 1.8rem;
-  background-color: #a855f7;
+  background-color: purple;
   color: #ffffff;
   text-decoration: none;
   border-radius: 10px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 100;
   transition: background-color 0.3s ease;
 }
@@ -173,7 +173,7 @@ body {
   }
 
   .btn {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0.75rem 1.5rem;
   }
 }
