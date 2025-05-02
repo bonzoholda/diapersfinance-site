@@ -4,8 +4,8 @@ body {
   padding: 0;
   font-family: 'Exo 2', sans-serif;
   font-weight: 100;
-  background-color: #0b0b0d;
-  color: #d4d4d8;
+  background-color: white;
+  color: #555555;
   line-height: 1.6;
 }
 
@@ -61,12 +61,12 @@ body {
 /* Title and subtitle */
 .title h1 {
   font-size: 3rem;
-  color: gold;
+  color: purple;
 }
 
 .title h2 {
   font-size: 1rem;
-  color: #d4d4d8;
+  color: #333333;
 }
 
 /* Tabs Navigation */
