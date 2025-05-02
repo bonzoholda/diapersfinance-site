@@ -14,6 +14,13 @@ body {
 }
 
 /* --- Tabs --- */
+.tab-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* spacing between tabs */
+  margin-bottom: 1rem;
+}
+
 .tab-button {
   color: #9ca3af; /* Lighter muted gray */
   font-weight: 300;
