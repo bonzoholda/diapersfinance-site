@@ -19,17 +19,17 @@ body {
 /* Header Layout */
 .header {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-  gap: 1.5rem;
+  padding-top: 2rem;
+  text-align: center;
 }
 
 .logo {
   position: relative;
-  width: 120px;  /* or your desired width */
+  width: 120px;
   height: auto;
+  margin-bottom: 1rem;
 }
 
 .logo img {
@@ -60,21 +60,22 @@ body {
   opacity: 0;
 }
 
+@media (max-width: 600px) {
+  .header {
+    padding-top: 1rem;
+  }
 
+  .logo {
+    width: 90px;
+  }
 
-.title h1 {
-  color: #a855f7;
-  font-size: 2.75rem;
-  margin: 0;
-  letter-spacing: 0.05em;
-}
+  .title h1 {
+    font-size: 1.5rem;
+  }
 
-.title h2 {
-  color: #ffffff;
-  font-size: 1.7rem;
-  font-weight: 100;
-  margin: 0.25rem 0 0;
-  opacity: 0.8;
+  .title h2 {
+    font-size: 1rem;
+  }
 }
 
 /* --- Tabs Navigation --- */
