@@ -28,21 +28,28 @@ body {
 
 .logo {
   position: relative;
-  width: 120px; /* Adjust size */
+  width: 120px;  /* or your desired width */
   height: auto;
 }
 
 .logo img {
+  display: block;
+  width: 100%;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
   transition: opacity 0.3s ease;
-  width: 100%;
-  height: auto;
+}
+
+.logo-default {
+  opacity: 1;
+  z-index: 1;
 }
 
 .logo-hover {
   opacity: 0;
+  z-index: 2;
 }
 
 .logo:hover .logo-hover {
@@ -52,6 +59,7 @@ body {
 .logo:hover .logo-default {
   opacity: 0;
 }
+
 
 
 .title h1 {
