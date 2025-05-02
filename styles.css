@@ -61,10 +61,6 @@ body {
   }
 }
 
-.title h1,
-.title h2 {
-  color: gold;
-}
 
   .title h1 {
     font-size: 2rem;
@@ -72,6 +68,11 @@ body {
 
   .title h2 {
     font-size: 1.5rem;
+  }
+
+  .title h1,
+  .title h2 {
+    color: gold;
   }
 }
 
