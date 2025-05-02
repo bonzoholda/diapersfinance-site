@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   background-color: #0b0b0d;
   color: #d4d4d8;
   line-height: 1.6;
@@ -66,6 +66,7 @@ body {
 
   .title h1 {
     font-size: 2rem;
+    color: #a855f7;
   }
 
   .title h2 {
