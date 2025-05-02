@@ -26,40 +26,48 @@ body {
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   position: relative;
-  width: 240px;
-  height: auto;
-  margin: 0 auto 1rem auto; /* Center and add space below */
+  width: 100%;
+  max-width: 240px;
 }
 
 .logo img {
   width: 100%;
   height: auto;
-  display: block;
+  max-width: 240px;
   transition: opacity 0.3s ease;
 }
 
-.logo .logo-hover {
+.logo img.logo-hover {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
 
-.logo:hover .logo-hover {
-  opacity: 1;
-}
-
-.logo:hover .logo-default {
+.logo:hover img.logo-default {
   opacity: 0;
 }
 
+.logo:hover img.logo-hover {
+  opacity: 1;
+}
+
+/* Responsive adjustments */
 @media (max-width: 600px) {
   .logo {
-    width: 70vw; /* Responsive for small screen, centered */
-    max-width: 240px; /* Cap max size */
+    max-width: 180px;
+  }
+
+  .logo img {
+    max-width: 180px;
   }
 }
+
 
 
   .title h1 {
