@@ -64,16 +64,14 @@ body {
 
   .title h1 {
     font-size: 2rem;
-  }
-
-  .title h2 {
-    font-size: 1.5rem;
-  }
-
-  .title h1,
-  .title h2 {
     color: gold;
   }
+
+  .title h2 {
+    font-size: 1rem;
+    color: zinc;
+  }
+
 }
 
 
