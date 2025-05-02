@@ -27,7 +27,7 @@ body {
 
 .logo {
   position: relative;
-  width: 120px;
+  width: 240px;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -65,11 +65,11 @@ body {
   }
 
   .title h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .title h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
