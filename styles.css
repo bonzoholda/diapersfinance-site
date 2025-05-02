@@ -26,10 +26,33 @@ body {
   gap: 1.5rem;
 }
 
-.logo img {
-  max-width: 140px;
+.logo {
+  position: relative;
+  width: 120px; /* Adjust size */
   height: auto;
 }
+
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  height: auto;
+}
+
+.logo-hover {
+  opacity: 0;
+}
+
+.logo:hover .logo-hover {
+  opacity: 1;
+}
+
+.logo:hover .logo-default {
+  opacity: 0;
+}
+
 
 .title h1 {
   color: #a855f7;
