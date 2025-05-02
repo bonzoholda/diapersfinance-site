@@ -1,29 +1,87 @@
-o/* Base styling */
+/* --- Global Base Styling --- */
 * {
   font-family: 'Exo 2', sans-serif !important;
+  font-weight: 200;
 }
 
-
+/* --- Base Theme: Soft Blush --- */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Exo 2', sans-serif;
-  font-weight: 200;
-  background-color: #2a3439; /* Gunmetal */
-  color: #d4d4d8; /* Light zinc for text */
+  background-color: #fff8f9; /* soft blush background */
+  color: #2d2d2d; /* soft dark text */
   line-height: 1.6;
 }
 
+/* --- Accent Purple & Tabs --- */
+.tab-button {
+  color: #7a7a7a;
+  font-weight: 300;
+}
 
+.tab-button.active,
+.tab-button:hover {
+  color: #a855f7;
+}
 
-/* Container with max width and center alignment */
+.tab-button::after {
+  background-color: #a855f7;
+}
+
+/* --- Headings --- */
+.title h1 {
+  font-size: 2.5rem;
+  color: #2d2d2d;
+  font-weight: 200;
+}
+
+.title h2 {
+  font-size: 1.25rem;
+  color: #5e5e60;
+  font-weight: 200;
+}
+
+/* --- Buttons --- */
+.btn {
+  background-color: #a855f7;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.85rem 1.8rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #9333ea;
+}
+
+/* --- Dapp Button Container --- */
+.dapp-button {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/* --- Cards, Sections --- */
+.card,
+.section {
+  background-color: #ffffff;
+  border: 1px solid #ffd6e7;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Container --- */
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
 }
 
-/* Header Layout */
+/* --- Header Layout --- */
 .header {
   display: flex;
   flex-direction: column;
@@ -32,7 +90,7 @@ body {
   text-align: center;
 }
 
-/* Logo container */
+/* --- Logo Area --- */
 .logo {
   position: relative;
   width: 100%;
@@ -46,8 +104,8 @@ body {
 .logo img {
   width: 100%;
   height: auto;
-  transition: opacity 0.3s ease;
   display: block;
+  transition: opacity 0.3s ease;
 }
 
 .logo img.logo-hover {
@@ -65,67 +123,7 @@ body {
   opacity: 1;
 }
 
-/* Title and subtitle */
-.title h1 {
-  font-size: 3rem;
-  font-weight: 300;
-  color: purple;
-}
-
-.title h2 {
-  font-size: 1.5rem;
-  font-weight: 100;
-  color: #333333;
-}
-
-/* Tabs Navigation */
-.tab-buttons {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  border-bottom: 1px;
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
-}
-
-.tab-button {
-  background: none;
-  border: none;
-  font-family: 'Exo 2', sans-serif;
-  font-weight: 200;
-  font-size: 1.1rem;
-  color: black;
-  cursor: pointer;
-  padding: 0.5rem 0;
-  position: relative;
-  transition: color 0.2s ease;
-}
-
-.tab-button::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0%;
-  height: 2px;
-  background-color: #a855f7;
-  transition: width 0.3s ease;
-}
-
-.tab-button:hover {
-  color: #a855f7;
-}
-
-.tab-button:hover::after,
-.tab-button.active::after {
-  width: 100%;
-}
-
-.tab-button.active {
-  color: #a855f7;
-}
-
-/* Content area */
+/* --- Tab Content Animation --- */
 .tab-content {
   display: none;
 }
@@ -140,51 +138,26 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Dapp button */
-.dapp-button {
-  margin-top: 3rem;
-  text-align: center;
-}
-
-.btn {
-  padding: 0.85rem 1.8rem;
-  background-color: purple;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 10px;
-  font-size: 1.1rem;
-  font-weight: 100;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #9333ea;
-}
-
-/* Mobile responsive tweaks */
+/* --- Responsive Styles --- */
 @media (max-width: 768px) {
   .logo {
     max-width: 160px;
   }
 
-  .logo img {
-    max-width: 100%;
+  .title h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #a855f7;
   }
 
-.title h1 {
-  font-size: 3rem;
-  font-weight: 300;
-  color: purple;
-}
-
-.title h2 {
-  font-size: 1.5rem;
-  font-weight: 100;
-  color: #333333;
-}
+  .title h2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #333333;
+  }
 
   .btn {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0.75rem 1.5rem;
   }
 }
