@@ -23,7 +23,7 @@ body {
 .tab-button.active,
 .tab-button:hover {
   color: #a855f7; /* Purple on hover and active */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for hover and active state */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0); /* Light shadow for hover and active state */
 }
 
 .tab-button::after {
@@ -40,7 +40,7 @@ body {
 /* --- Headings --- */
 .title h1 {
   font-size: 2.5rem;
-  color: #2e2e2e;
+  color: purple;
   font-weight: 200;
 }
 
@@ -176,7 +176,7 @@ body {
   .title h1 {
     font-size: 2.5rem;
     font-weight: 300;
-    color: #a855f7;
+    color: purple;
   }
 
   .title h2 {
