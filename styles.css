@@ -30,7 +30,7 @@ body {
 .tab-button.active,
 .tab-button:hover {
   color: #a855f7; /* Purple on hover and active */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0); /* Light shadow for hover and active state */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for hover and active state */
 }
 
 .tab-button::after {
@@ -69,6 +69,7 @@ body {
   text-decoration: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for card effect */
+  margin-bottom: 1rem;
 }
 
 .btn:hover {
