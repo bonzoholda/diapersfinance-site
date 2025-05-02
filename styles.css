@@ -72,6 +72,7 @@ body {
 
 .title h2 {
   font-size: 1.5rem;
+  font-weight: 100;
   color: #333333;
 }
 
@@ -168,14 +169,17 @@ body {
     max-width: 100%;
   }
 
-  .title h1 {
-    font-size: 3rem;
-    font-weight: 600;
-  }
+.title h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: purple;
+}
 
-  .title h2 {
-    font-size: 1.5rem;
-  }
+.title h2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #333333;
+}
 
   .btn {
     font-size: 1.1rem;
