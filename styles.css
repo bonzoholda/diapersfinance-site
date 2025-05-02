@@ -43,7 +43,7 @@ body {
 
 /* --- Buttons --- */
 .btn {
-  background-color: #a855f7;
+  background-color: #d6aefb; /* Lighter purple */
   color: #ffffff;
   border: none;
   border-radius: 10px;
@@ -51,12 +51,15 @@ body {
   font-size: 1.1rem;
   font-weight: 200;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for card effect */
 }
 
 .btn:hover {
-  background-color: #9333ea;
+  background-color: #a855f7; /* Slightly darker on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
+
 
 /* --- Content Card Wrapper --- */
 .content-card {
