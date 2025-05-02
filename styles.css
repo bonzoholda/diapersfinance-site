@@ -1,4 +1,4 @@
-/* Base styling */
+o/* Base styling */
 body {
   margin: 0;
   padding: 0;
@@ -83,9 +83,9 @@ body {
 .tab-button {
   background: none;
   border: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 1.1rem;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 150;
+  font-size: 1.5rem;
   color: #a1a1aa;
   cursor: pointer;
   padding: 0.5rem 0;
