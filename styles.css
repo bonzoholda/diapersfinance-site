@@ -2,7 +2,7 @@ o/* Base styling */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Exo', sans-serif;
   font-weight: 100;
   background-color: white;
   color: #333333;
@@ -83,8 +83,8 @@ body {
 .tab-button {
   background: none;
   border: none;
-  font-family: 'Exo 2', sans-serif;
-  font-weight: 150;
+  font-family: 'Exo', sans-serif;
+  font-weight: 100;
   font-size: 1.5rem;
   color: #a1a1aa;
   cursor: pointer;
