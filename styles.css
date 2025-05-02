@@ -60,7 +60,7 @@ body {
 
 /* Title and subtitle */
 .title h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: gold;
 }
 
@@ -163,7 +163,7 @@ body {
   }
 
   .title h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .title h2 {
